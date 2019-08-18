@@ -1,7 +1,8 @@
 <h1>Hi!</h1>
 
+<h2><strong><%= user_signed_in? ? "User logged in" : "User not logged in" %></strong></h2>
 <%= link_to "Page requiring authentication", show_path %>
-
+<hr>
 <p><strong>Last 10 events:</strong></p>
 <ul>
   <% Ahoy::Event.last(10).each do |e| %>
