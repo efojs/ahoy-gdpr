@@ -1,6 +1,16 @@
 # Test app for Ahoy GDPR feature
 Issue https://github.com/ankane/ahoy/issues/423  
 
+### Steps to reproduce
+* `$ clone https://github.com/efojs/ahoy-gdpr.git`
+* `$ cd ahoy-gdpr`
+* (create empty gemset)
+* `$ bundle`
+* `$ rails db:create`
+* `$ rails db:migrate`
+* `$ rails s`
+* check http://localhost:3000/
+
 ### Expected behavior
 Not track `user_id`
 
