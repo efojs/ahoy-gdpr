@@ -1,0 +1,7 @@
+<h1>Page requiring authentication</h1>
+
+<%= link_to "Home", root_path %>
+<% if current_user %>
+  <p>current_user id: <%= "#{current_user.id}" %></p>
+  <%= link_to "Log out", destroy_user_session_path, :method => :delete %>
+<% end %>

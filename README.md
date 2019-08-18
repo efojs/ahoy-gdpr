@@ -1,24 +1,17 @@
-# README
+# Test app for Ahoy GDPR feature
+Issue https://github.com/ankane/ahoy/issues/423  
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+### Expected behavior
+Not track `user_id`
 
-Things you may want to cover:
+### Actual behavior
+Tracks `user_id`
 
-* Ruby version
+### System configuration
+**Rails**: 6.1.0.alpha (at b1c27c0@b1c27c0)
 
-* System dependencies
+**Ahoy**: 3.0.0 (at master@19daf69)
 
-* Configuration
+**Devise**: 4.6.2 (at master@9aa17ee)
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+**Ruby**: 2.5.5
